@@ -12,10 +12,10 @@ url: "/search-space/"
     <button disabled>Search</button>
   </p>
 
-  <datalist id="search-space-suggestions">&nbsp;</datalist>
+  <datalist id="search-space-suggestions"></datalist>
 </form>
 
-<p id="search-space-info"></p>
+<p id="search-space-info">&nbsp;</p>
 
 <noscript>
   <p>I'm sorry, but JavaScript is required for searching. You might want to look at <a href="./posts-and-replies/">all unindexed posts and replies</a>. Beware, though, as that page might be heavy.</p>
@@ -39,7 +39,7 @@ url: "/search-space/"
   <p><a href="https://dahlstrand.net/donate/" id="throw-money-at-sven">💸 Throw money at Sven</a></p>
 </div>
 
-<script src="./mini-search.js"></script>
+<script src="./minisearch.js"></script>
 <script>
   const query = (() => {
     const queryElement = document.querySelector('#q');
