@@ -28,7 +28,7 @@ Hello, fellow microblogger! 👋 This plug-in is available as BETA in the offici
 
 ### Install the plug-in
 
-1. Find [Search Space in the plug-in directory](https://micro.blog/account/plugins/view/).
+1. Find [Search Space in the plug-in directory](https://micro.blog/account/plugins/view/78).
 2. Choose the site you want to install the plug-in to.
 3. Press *Install*.
 4. Congratulations, the plug-in is installed.
