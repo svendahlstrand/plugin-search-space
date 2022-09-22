@@ -35,7 +35,7 @@ Hello, fellow microblogger! 👋 This plug-in is available as BETA in the offici
 
 ### Do your first search
 
-After installing the plug-in, you should have a new page at `/search-space/` within a few minutes. So, for example, if your blog is at https://dahlstrand.net/, the address is https://dahlstrand.net/surprise-me/.
+After installing the plug-in, you should have a new page at `/search-space/` within a few minutes. So, for example, if your blog is at https://dahlstrand.net/, the address is https://dahlstrand.net/search-space/.
 
 1. Go to that page.
 2. Search for whatever is on your mind. Good luck! 🕵️
