@@ -39,7 +39,7 @@ url: "/search-space/"
   <p><a href="https://dahlstrand.net/donate/" id="throw-money-at-sven">💸 Throw money at Sven</a></p>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/minisearch@5.0.0/dist/umd/index.min.js"></script>
+<script src="./mini-search.js"></script>
 <script>
   const query = (() => {
     const queryElement = document.querySelector('#q');
