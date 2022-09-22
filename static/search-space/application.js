@@ -27,7 +27,9 @@ document.querySelector('#search-space-results').addEventListener('click', event 
         window.location.href = conversation.home_page_url;
       })
       .catch((error) => {
-        linkElement.innerHTML = `<del>${linkElement.innerText}</del>`;
+        const deletedLink = document.createElement('del');
+        deletedLink.innerText = linkElement.innerText;
+        linkElement.parentNode.replaceChild(deletedLink, linkElement);
       });
   }
 });
@@ -69,7 +71,11 @@ fetch('./posts-and-replies/')
 
     const miniSearch = new MiniSearch({
       fields: ['title', 'text'],
-      storeFields: ['title', 'text', 'permalink', 'timelinelink', 'date']
+      storeFields: ['title', 'text', 'permalink', 'timelinelink', 'date'],
+      searchOptions: {
+        combineWith: 'AND',
+        prefix: term => term.length > 2
+      }
     });
 
     miniSearch.addAll(articles);
@@ -77,7 +83,7 @@ fetch('./posts-and-replies/')
     inform(`${miniSearch._documentCount} posts and replies indexed.`);
 
     if (query.parameterIsPresent) {
-      const results = miniSearch.search(query.parameter, { prefix: true, combineWith: 'AND' });
+      const results = miniSearch.search(query.parameter);
 
       document.querySelector('#search-space-results').innerHTML = results.map(hit => {
         const title = hit.title.length > 0 ? `<strong>${hit.title}</strong> ` : '';
