@@ -1,6 +1,6 @@
 # 🔭 Search Space BETA
 
-Find long-lost posts *and* replies on your Micro.blog.
+Find long-lost posts *and* replies on your Micro.blog. [Try it out on Sven's blog](https://dahlstrand.net/search-space/).
 
 ![](https://raw.githubusercontent.com/svendahlstrand/plugin-search-space/main/docs/screenshot.png)
 
