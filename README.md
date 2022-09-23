@@ -8,11 +8,11 @@ Find long-lost posts *and* replies on your Micro.blog. [Try it out on Sven's blo
 
 To get updates on this plug-in, [follow @sod on Micro.blog](https://micro.blog/sod).
 
-## Find this valuable to you? Support me!
+## Do you get value from Search Space? I'd love your support!
 
 Hey! It's me, Sven. Search Space and my other plug-ins are passion projects released to the world for free. That said, donations are always welcome if you get value from my work.
 
-[💸 Donate $10](https://dahlstrand.net/donate/) or any other amount.
+[💸 Donate $10](https://dahlstrand.net/donate/) or any amount you're comfortable with. Thanks! 🙏
 
 ## Bells and whistles
 
