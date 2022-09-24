@@ -5,6 +5,7 @@ const query = (() => {
 
   queryElement.value = parameter;
   disabledElements.forEach(e => { e.disabled = false; });
+  queryElement.focus();
 
   return {
     element: queryElement,
