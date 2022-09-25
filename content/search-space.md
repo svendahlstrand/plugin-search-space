@@ -3,12 +3,10 @@ title: "Search Space"
 url: "/search-space/"
 ---
 
-<link href="./posts-and-replies/" rel="prefetch" />
-
 <form id="search-space-form" role="search">
   <p>
     <label for="q">Search posts and replies:</label>
-    <input type="search" name="q" id="q" placeholder="micro monday" disabled list="search-space-suggestions" />
+    <input type="search" name="q" id="q" placeholder="micro monday" disabled list="search-space-suggestions" data-documents-url="{{< search-space/documents-url >}}" />
     <button disabled>Search</button>
   </p>
 
@@ -18,7 +16,7 @@ url: "/search-space/"
 <p id="search-space-info">&nbsp;</p>
 
 <noscript>
-  <p>I'm sorry, but JavaScript is required for searching. You might want to look at <a href="./posts-and-replies/">all unindexed posts and replies</a>. Beware, though, as that page might be heavy.</p>
+  <p>I'm sorry, but JavaScript is required for searching. You might want to look at <a href="{{< search-space/documents-url >}}">all unindexed posts and replies</a>. Beware, though, as that file might be heavy.</p>
 </noscript>
 
 <hr />

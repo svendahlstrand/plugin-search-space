@@ -1,0 +1,22 @@
+{{ $documents := where .Site.Pages "Type" "in" (slice "post" "reply") -}}
+[
+{{- range $i, $document := $documents  -}}
+  {{ $conversationlink := printf "https://micro.blog/conversation.js?format=jsonfeed&url=%s" ($document.Permalink | urlquery) -}}
+  {{ if eq $document.Type "reply" -}}
+    {{ $path := $document.Permalink | path.Split -}}
+    {{ $id := strings.TrimSuffix ".html" $path.File -}}
+    {{ $conversationlink = printf "https://micro.blog/%s/%s"  .Site.Author.username $id -}}
+  {{ end -}}
+  {{ if $i }},{{ end }}
+  {
+    "id": {{ $i | jsonify }},
+    "type": {{ $document.Type | jsonify }},
+    "title": {{ $document.Title| jsonify }},
+    "text": {{ $document.Plain | jsonify }},
+    "dateiso": {{ $document.Date.Format "2006-01-02 15:04:05 -0700" | jsonify }},
+    "date": {{ $document.Date.Format "3:04 p.m. on Jan 2, 2006" | jsonify }},
+    "permalink": {{ $document.Permalink | jsonify }},
+    "timelinelink": {{ $conversationlink | jsonify }}
+  }
+{{- end }}
+]

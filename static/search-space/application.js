@@ -53,23 +53,9 @@ const start = performance.now();
 
 inform('Indexing…');
 
-fetch('./posts-and-replies/')
-  .then(response => response.text())
-  .then(html => {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-
-    const articles = [...doc.querySelectorAll('article')].map((article, id) => {
-      return {
-        id: id,
-        title:article.querySelector('h2').textContent,
-        text: article.querySelector('p').textContent,
-        permalink: article.querySelector('time > a').href,
-        timelinelink: article.querySelector('article > a').href,
-        date: article.querySelector('time').textContent
-      };
-    });
-
+fetch(query.element.getAttribute('data-documents-url'))
+  .then(response => response.json())
+  .then(documents => {
     const miniSearch = new MiniSearch({
       fields: ['title', 'text'],
       storeFields: ['title', 'text', 'permalink', 'timelinelink', 'date'],
@@ -79,7 +65,7 @@ fetch('./posts-and-replies/')
       }
     });
 
-    miniSearch.addAll(articles);
+    miniSearch.addAll(documents);
 
     inform(`${miniSearch._documentCount} posts and replies indexed.`);
 
