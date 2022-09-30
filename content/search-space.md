@@ -38,7 +38,7 @@ url: "/search-space/"
 </div>
 
 <script src="./minisearch.js"></script>
-<script src="./application.js"></script>
+<script src="./application.js" type="module"></script>
 
 <style>
   #search-space-form input,
