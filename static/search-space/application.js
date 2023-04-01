@@ -1,4 +1,4 @@
-function truncate(text, max){
+const truncate = (text, max) => {
   if (text.length <= max) { return text; }
 
   const truncated = text.slice(0, max-1);
