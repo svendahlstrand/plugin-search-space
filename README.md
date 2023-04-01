@@ -1,4 +1,4 @@
-# 🔭 Search Space BETA
+# 🔭 Search Space
 
 Find long-lost posts *and* replies on your Micro.blog. [Try it out on Sven's blog](https://dahlstrand.net/search-space/).
 
@@ -20,11 +20,12 @@ Hey! It's me, Sven. Search Space and my other plug-ins are passion projects rele
 * ❤️ Emojis are valid search terms. How often do you [😂](https://dahlstrand.net/search-space/?q=😂)</a>, [😭](https://dahlstrand.net/search-space/?q=😭), or read [📚](https://dahlstrand.net/search-space/?q=📚)?
 * 🔗 You can link to search results like [*this*](https://dahlstrand.net/search-space/?q=this).
 * 🪆 Searching for [*mac*](https://dahlstrand.net/search-space/?q=mac) will return results like *Mac*Book and *mac*hine.
-* 💬 Replies are indexed as well. Try searching people's usernames to find conversations you had with them.
+* 💬 Replies are indexed, try searching people's usernames to find conversations you had with them.
+* 🎙️ Podcast transcripts are indexed as well!
 
 ## Get started
 
-Hello, fellow microblogger! 👋 This plug-in is available as BETA in the official directory. It's easy to install, but be aware that it's early in development. So bugs and weird things will happen. 😅 Thanks for your help with testing.
+Hello, fellow microblogger! 👋 This plug-in is available in the official directory and should be easy to install.
 
 ### Install the plug-in
 
