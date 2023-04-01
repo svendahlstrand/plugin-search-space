@@ -22,7 +22,7 @@ url: "/search-space/"
 <hr />
 
 <div id="search-space-results">
-  <p>Hey! It's me, Sven. Thanks for beta testing 🔭 Search Space. Here are some nifty features to play with:</p>
+  <p>Welcome to 🔭&nbsp;Search Space! Here are some nifty features to play with:</p>
 
   <ul>
     <li>💡 Suggestions are a thing. Start typing, and you will see what I mean.</li>
@@ -31,10 +31,7 @@ url: "/search-space/"
     <li>🪆 Searching for <a href="?q=mac"><em>mac</em></a> will return results like <em>Mac</em>Book and <em>mac</em>hine.</li>
     <li>💬 Replies are indexed as well. Try searching people's usernames to find conversations you had with them.</li>
   </ul>
-
-  <p>Follow <a href="https://micro.blog/sod">@sod</a> for updates and <a href="https://micro.blog/sod/13396481">puppies</a>. Hit me up if you find any bugs or want to chat.</p>
-  <p>P.S. Search Space and my other plug-ins are passion projects released to the world for free. That said, donations are always welcome if you get value out of my work.</p>
-  <p><a href="https://dahlstrand.net/donate/" id="throw-money-at-sven">💸 Throw money at Sven</a></p>
+  <p>P.S. Search Space is a passion project! Built by <a href="https://micro.blog/sod">@sod</a> and released to the world for free. 💸&nbsp;<a href="https://dahlstrand.net/donate/">Donate $10</a> if you find it useful.</p>
 </div>
 
 <script src="./minisearch.js"></script>
@@ -44,9 +41,5 @@ url: "/search-space/"
   #search-space-form input,
   #search-space-form button {
     font-size: 1em;
-  }
-
-  #throw-money-at-sven {
-    display:inline-block;border: solid 0.2em yellow;border-radius:2px;background:black; color:white;padding:0.2em;font-size:1.23em;
   }
 </style>
