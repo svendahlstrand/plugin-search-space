@@ -1,4 +1,13 @@
-{{ $documents := where .Site.Pages "Type" "in" (slice "post" "reply" "transcript") -}}
+{{- $types := slice "post" -}}
+{{- $include_replies := $.Site.Params.search_space_include_replies -}}
+{{- $include_transcripts := $.Site.Params.search_space_include_transcripts -}}
+{{- if $include_replies -}}
+  {{- $types = $types | append "reply" -}}
+{{- end -}}
+{{- if $include_transcripts -}}
+  {{- $types = $types | append "transcript" -}}
+{{- end -}}
+{{- $documents := where .Site.Pages "Type" "in" $types -}}
 [
 {{- range $i, $document := $documents  -}}
   {{ $conversationlink := printf "https://micro.blog/conversation.js?format=jsonfeed&url=%s" ($document.Permalink | urlquery) -}}

@@ -1,0 +1,7 @@
+{
+  "params": {
+    "search_space_default_greeting": "Welcome to 🔭 Search Space! Here are some nifty features to play with:\n\n* 💡 Suggestions are a thing. Start typing, and you will see what I mean.\n* ❤️ Emojis are valid search terms. How often do you [😂](?q=😂), [😭](?q=😭), or read [📚](?q=📚)?\n* 🔗 You can link to search results like [*this*](?q=this).\n* 🪆 Searching for [*mac*](?q=mac) will return results like *Mac*Book and *mac*hine.\n* 💬 Replies are indexed, try searching people's usernames to find conversations you had with them.\n* 🎙️ Podcast transcripts are indexed as well!\n\nP.S. Search Space is a passion project! Built by [@sod](https://micro.blog/sod) and released to the world for free. Find it useful? 💸 [Donate $10](https://dahlstrand.net/donate/) or any amount you're comfortable with. Thanks! 🙏",
+    "search_space_include_replies": true,
+    "search_space_include_transcripts": true
+  }
+}

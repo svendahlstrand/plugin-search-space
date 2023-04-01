@@ -22,17 +22,7 @@ url: "/search-space/"
 <hr />
 
 <div id="search-space-results">
-  <p>Welcome to 🔭&nbsp;Search Space! Here are some nifty features to play with:</p>
-
-  <ul>
-    <li>💡 Suggestions are a thing. Start typing, and you will see what I mean.</li>
-    <li>❤️ Emojis are valid search terms. How often do you <a href="?q=😂">😂</a>, <a href="?q=😭">😭</a>, or read <a href="?q=📚">📚</a>?</li>
-    <li>🔗 You can link to search results like <a href="?q=this"><em>this</em></a>.</li>
-    <li>🪆 Searching for <a href="?q=mac"><em>mac</em></a> will return results like <em>Mac</em>Book and <em>mac</em>hine.</li>
-    <li>💬 Replies are indexed, try searching people's usernames to find conversations you had with them.</li>
-    <li>🎙️ Podcast transcripts are indexed as well!</li>
-  </ul>
-  <p>P.S. Search Space is a passion project! Built by <a href="https://micro.blog/sod">@sod</a> and released to the world for free. Find it useful? 💸&nbsp;<a href="https://dahlstrand.net/donate/">Donate $10</a> or any amount you're comfortable with. Thanks! 🙏</p>
+  {{< search-space/text "default_greeting" >}}
 </div>
 
 <script src="./minisearch.js"></script>

@@ -1,5 +1,22 @@
 {
   "version": "0.4.0",
   "title": "Search Space",
-  "description": "Find long-lost posts and replies on your Micro.blog."
+  "description": "Find long-lost posts and replies on your Micro.blog.",
+  "fields": [
+    {
+      "field": "params.search_space_default_greeting",
+      "label": "Greeting (optional)",
+      "type": "markdown"
+    },
+    {
+      "field": "params.search_space_include_replies",
+      "label": "Include replies in index",
+      "type": "boolean"
+    },
+    {
+      "field": "params.search_space_include_transcripts",
+      "label": "Include transcripts in index",
+      "type": "boolean"
+    }
+  ]
 }
