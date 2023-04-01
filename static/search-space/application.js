@@ -1,3 +1,11 @@
+function truncate(text, max){
+  if (text.length <= max) { return text; }
+
+  const truncated = text.slice(0, max-1);
+
+  return truncated.slice(0, truncated.lastIndexOf(" ")) + "&nbsp;&hellip;";
+};
+
 const query = (() => {
   const queryElement = document.querySelector('#q');
   const parameter = (new URL(document.location)).searchParams.get('q');
@@ -89,7 +97,7 @@ response.json().then(documents => {
 
     document.querySelector('#search-space-results').innerHTML = results.map(hit => {
       const title = hit.title.length > 0 ? `<strong>${hit.title}</strong> ` : '';
-      return `<article><p>${title}${hit.text}</p><p><a href="${hit.permalink}">${hit.date}</a> · <a href="${hit.timelinelink}">Conversation</a></p></article>`;
+      return `<article><p>${title}${truncate(hit.text, 300)}</p><p><a href="${hit.permalink}">${hit.date}</a> · <a href="${hit.timelinelink}">Conversation</a></p></article>`;
     }).join('<hr />');
 
     const duration = (performance.now() - start) / 1000;
