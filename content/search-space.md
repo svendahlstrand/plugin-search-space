@@ -36,10 +36,3 @@ url: "/search-space/"
 
 <script src="./minisearch.js"></script>
 <script src="./application.js" type="module"></script>
-
-<style>
-  #search-space-form input,
-  #search-space-form button {
-    font-size: 1em;
-  }
-</style>
