@@ -1,3 +1,3 @@
 {{- $path := "search-space/documents.json" -}}
-{{- $documents := resources.Get $path |  resources.ExecuteAsTemplate $path . | resources.Fingerprint "md5" -}}
-{{- $documents.Permalink -}}
+{{- $documents := resources.Get $path |  resources.ExecuteAsTemplate $path . -}}
+{{- $documents.Permalink -}}?version={{- $documents.Content | md5 -}}
