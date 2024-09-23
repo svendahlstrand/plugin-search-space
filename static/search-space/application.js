@@ -48,7 +48,7 @@ const startSuggesting = (index) => {
     let options = '';
 
     if (query.element.value.length > 0) {
-      options = index.autoSuggest(query.element.value).map(item => `<option>${item.suggestion}</option>`);
+      options = index.autoSuggest(query.element.value).slice(0, 3).map(item => `<option>${item.suggestion}</option>`);
     }
 
     document.querySelector('#search-space-suggestions').innerHTML = options;
