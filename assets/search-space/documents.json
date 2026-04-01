@@ -14,7 +14,7 @@
   {{ if eq $document.Type "reply" -}}
     {{ $path := $document.Permalink | path.Split -}}
     {{ $id := strings.TrimSuffix ".html" $path.File -}}
-    {{ $conversationlink = printf "https://micro.blog/%s/%s"  .Site.Author.username $id -}}
+    {{ $conversationlink = printf "https://micro.blog/%s/%s"  .Site.Params.author.username $id -}}
   {{ end -}}
   {{ if $i }},{{ end }}
   {
